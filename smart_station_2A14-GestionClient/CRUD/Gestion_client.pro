@@ -3,19 +3,9 @@
 # Project created by QtCreator 2018-10-26T21:45:23
 #
 #-------------------------------------------------
-QT += core gui charts printsupport
-QT       += core gui
-QT += quick
-QT += network
 
-QT        += core gui sql core network multimedia multimediawidgets charts serialport printsupport
-QT += multimedia
-
-
-
-greaterThan(QT_MAJOR_VERSION, 4):
-QT += widgets multimedia
-TARGET = test_son
+QT       += core gui sql
+QT += core gui charts
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -37,38 +27,23 @@ CONFIG += c++11
 
 SOURCES += \
     QrCode.cpp \
-    arduino.cpp \
     avis.cpp \
-    caisse.cpp \
     client.cpp \
-    employe.cpp \
-    exporterexcel.cpp \
-    guichet.cpp \
+    dialog.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp \
-    notif.cpp \
-    reparations.cpp \
-    smtp.cpp \
-    vehicule.cpp
+    connection.cpp
 
 HEADERS += \
     QrCode.hpp \
-    arduino.h \
     avis.h \
-    caisse.h \
     client.h \
-    employe.h \
-    exporterexcel.h \
-    guichet.h \
+    dialog.h \
         mainwindow.h \
-    connection.h \
-    notif.h \
-    reparations.h \
-    smtp.h \
-    vehicule.h
+    connection.h
 
 FORMS += \
+    dialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.
